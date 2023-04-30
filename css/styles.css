@@ -102,7 +102,6 @@ justify-content: space-between;
 .header-navigation {
 display: flex;
 align-items: center;
-/* margin-right: auto; */
 }
 
 .header-list-main {
@@ -257,12 +256,12 @@ color: var(--color-slate);
 .mob-wrap-menu{
 margin-top: 60px;
 }
-/* Секція 1 */
+/** Секція 1 */
 .hero{
 background: var(--color-grey);
 min-width: 428px;
 width: 100%;
-/* margin: 0 auto; */
+
 padding-top: 112px;
 padding-bottom: 112px;
 text-align: center;
@@ -353,7 +352,6 @@ row-gap: 72px;
 }
 .slogan-list-item{
 min-width: 396px;
-/* flex-basis: calc((100% - 16px)/2); */
 }
 
 .slogan-title {
@@ -1005,7 +1003,6 @@ min-width: 398px;
 }
 .footer-input-wrap{
 width: 100%;
-/* max-width: 398px; */
 }
 .footer-input{
 min-width: 264px;
@@ -1067,7 +1064,3 @@ margin-right: auto;
 background-color: var(--color-ocean);
 }
 
-/* .footer-input-wrap{
-display: flex;
-gap: 24px;
-} */

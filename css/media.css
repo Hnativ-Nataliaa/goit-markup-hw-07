@@ -6,6 +6,7 @@
            .menu-open-btn{
             margin-left: auto;
            }
+            
                 .hero {
                     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-tab.jpg);
         }
@@ -27,8 +28,7 @@
     }
         .hero {
             min-width: 768px;
-            /* margin-right: auto;
-            margin-left: auto; */
+            
         }
         .header-list-main {
             display: flex;
