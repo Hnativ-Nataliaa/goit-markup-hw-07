@@ -1,86 +1,111 @@
 @media screen and (min-width: 428px){
-    .container {
-            max-width: 428px;
-        
-        }
-           .menu-open-btn{
-            margin-left: auto;
-           }
-            
-                .hero {
-                    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-tab.jpg);
-        }
-                @media (min-device-pixel-ratio: 2),
-                (-webkit-min-device-pixel-ratio: 2),
-                (min-resolution: 192dpi),
-                (min-resolution: 2dppx) {
-                    .hero {
-                        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-                            url(../images/people-office-tab-2x.jpg);
-                    }
-                }
+.container {
+max-width: 428px;
 }
+.menu-open-btn{
+margin-left: auto;
+}
+.hero {
+min-width: 428px;
+margin: 0 auto;
+}
+.hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-mob.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+.hero {
+background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+url(../images/people-office-mob-2x-2.jpg);
+    }
+}
+} 
+
 
 @media screen and (min-width: 768px) {
     .container {
         max-width: 768px;
         
     }
-        .hero {
-            min-width: 768px;
-            
+.hero {
+min-width: 768px;
+margin: 0 auto;}
+.hero {
+background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-tab.jpg);
+}
+@media (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+.hero {
+background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+url(../images/people-office-tab-2x.jpg);
+}
+}
+
+.hero-title {
+font-size: 56px;
+line-height: 1.07;
+max-width: 496px;
+margin-bottom: 36px;
+}
+.header-list-main {
+display: flex;
+}
+.header-navigation {
+margin-right: auto;
         }
-        .header-list-main {
-            display: flex;
-        }
-        .header-navigation {
-            margin-right: auto;
-        }
-                .header-item-main {
-                    margin-right: 40px;
+.header-item-main {
+margin-right: 40px;
                 }
-                .header-item-main:last-child {
-                margin-right: 0;
-                                }
-                        .header-item-link {
-                            font-weight: 500;
-                            font-size: 16px;
-                            line-height: 1.5;
-                            letter-spacing: 0.02em;
-                            color: var(--color-grey);
-                            text-decoration: none;
-                            transition-property: color;
-                            transition-duration: 250ms;
-                            transition-timing-function: var(--cubic);
-                        }
-                .header-item-link:is(:hover, :focus) {
-                    color: var(--color-ocean);
+.header-item-main:last-child {
+margin-right: 0;
+}
+.header-item-link {
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: var(--color-grey);
+text-decoration: none;
+transition-property: color;
+transition-duration: 250ms;
+transition-timing-function: var(--cubic);
+}
+.header-item-link:is(:hover, :focus) {
+color: var(--color-ocean);
                 }
-        .contacts {
-            font-style: normal;
+.contacts {
+font-style: normal;
         }
-    .menu-open-btn{
-        display: none;
+.menu-open-btn{
+display: none;
     }
-        .contacts-list {
-            list-style-type: none;
-            display: flex;
-            column-gap: 40px;
-            flex-direction: column-reverse;
-            justify-content:space-between ;
-            gap: 12px;
+.contacts-list {
+list-style-type: none;
+display: flex;
+flex-direction: column;
+justify-content:space-between ;
+gap: 12px;
         }
     
-        .contacts-link {
-            font-size: 16px;
-            line-height: 1.5;
-            letter-spacing: 0.02em;
-            color: var(--color-slate);
-            text-decoration: none;
-            transition-property: color;
-            transition-duration: 250ms;
-            transition-timing-function: var(--cubic);
-        }
+.contacts-link {
+font-weight: 400;
+font-size: 12px;
+line-height: 1.17px;
+letter-spacing: 0.04em;
+color: var(--color-slate);
+text-decoration: none;
+transition-property: color;
+transition-duration: 250ms;
+transition-timing-function: var(--cubic);
+}
     
         .contacts-link:hover {
             color: var(--color-ocean);
@@ -89,24 +114,7 @@
         .contacts-link:focus {
             color: var(--color-ocean);
         }
-        .hero {
-            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
-        }
-                @media (min-device-pixel-ratio: 2),
-                (-webkit-min-device-pixel-ratio: 2),
-                (min-resolution: 192dpi),
-                (min-resolution: 2dppx) {
-                    .hero {
-                        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-                            url(../images/people-office-desk-2x-2.jpg);
-                    }
-                }
-        .hero-title {
-            font-size: 56px;
-            line-height: 1.07;
-            max-width: 496px;
-            margin-bottom: 36px;
-        }
+        
         .team-list {
             column-gap: 24px;
             row-gap: 64px;
@@ -116,8 +124,7 @@
                     min-width: 768px;
                     width: 100%;
                 }
-               
-                .customers-list {
+.customers-list {
                     min-width: 552px;
                 column-gap: 24px;
                 row-gap: 72px;
@@ -137,88 +144,114 @@
                     column-gap: 24px;
                     row-gap: 72px;
                 }
-                .slogan-list-item {
-                    min-width: 356px;
-                    flex-basis: calc((100% - 24px)/2);
+.slogan-list-item {
+min-width: 356px;
+flex-basis: calc((100% - 24px)/2);
                 }
-                .slogan-title{
-                text-align: start;
-                }
-            .container-footer{
-                display: flex;
-                flex-wrap: wrap;
-                column-gap: 24px;
-                row-gap: 72px;
-                padding-top: 96px;
-                padding-bottom: 96px;
-                justify-content: left;
-                padding: 96px 108px;
-                
-            }
-            .wrap-footer {
-    margin: 0;
-    max-width: 264px;
-    padding: 0px;
-        }
-            .footer-link{
-                justify-content: start;
-            }
-        .footer-form {
-                margin-top: 0px;
-                margin-bottom: 0px;
-                max-width: 453px;
-                padding: 0px;
-                }
-        .footer-input-wrap {
-            display: flex;
-            gap: 24px;
-            
-        }
-        .footer-soc {
-        min-width: 208px;
-        margin-right: auto;
-        }
-        .footer-title {
-            text-align: start;
-        }
-        .footer-form-title {
-            text-align: start;
-                }
-        .footer-input-wrap {
-        max-width: 264px;
-                        }
-        .footer-form-btn {
-        margin-top: 0px;
-                }
-        }
+.slogan-title{
+text-align: start;
+}
 
+.wrap-footer {
+margin: 0;
+max-width: 264px;
+padding: 0px;
+}
+.container-footer {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+    padding-top: 96px;
+    padding-bottom: 96px;
+    justify-content: left;
+    padding: 96px 108px;
+}
+.footer-link{
+justify-content: start;
+}
+.footer-form {
+margin-top: 0px;
+margin-bottom: 0px;
+max-width: 453px;
+padding: 0px;
+}
+.footer-input-wrap {
+display: flex;
+gap: 24px;
+min-width: 264px;
+}
+.footer-soc {
+min-width: 208px;
+}
+.footer-title {
+text-align: start;
+}
+.footer-form-title {
+text-align: start;
+}
+
+.footer-form-btn {
+margin-top: 0px;
+}
+}
+/* *---------------------------------------------------------* */
 
 @media screen and (min-width: 1200px) {
-    
 
-    .container {
-        max-width: 1158px;
-    }
+.container {
+max-width: 1158px;
+}
 
 .hero {
+    padding-top: 188px;
+    padding-bottom: 188px;
     background: var(--color-grey);
     max-width: 1440px;
     margin: 0 auto;
-    padding-top: 112px;
-    padding-bottom: 112px;
     text-align: center;
     width: 100%;
 }
-.header-list-main {
-    display: flex;
+.hero {
+background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+background-position: center center;
+background-size: cover;
+background-repeat: no-repeat;
 }
 
-.header-item-main {
-    margin-right: 40px;
+@media (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+.hero {
+background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+url(../images/people-office-desk-2x-2.jpg);
 }
+}
+
+
+
+.hero-title {
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--color-white);
+    max-width: 496px;
+    margin: auto;
+    align-items: center;
+    margin-bottom: 48px;
+}
+
+
+.header-list-main {
+display: flex;
+margin-right: 40px;
+}
+
 
 .header-item-main:last-child {
-    margin-right: 0;
+margin-right: 0;
 }
 
 .header-item-link {
@@ -265,33 +298,7 @@
 .contacts-link:focus {
     color: var(--color-ocean);
 }
-        .hero {
-            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
-        }
-                @media (min-device-pixel-ratio: 2),
-                (-webkit-min-device-pixel-ratio: 2),
-                (min-resolution: 192dpi),
-                (min-resolution: 2dppx) {
-                    .hero {
-                        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-                            url(../images/people-office-desk-2x-2.jpg);
-                    }
-                }
-    .hero{
-        padding-top: 188px;
-        padding-bottom: 188px;
-    }
-        .hero-title {
-            font-size: 56px;
-            line-height: 1.07;
-            text-align: center;
-            letter-spacing: 0.02em;
-            color: var(--color-white);
-            max-width: 496px;
-            margin: auto;
-            align-items: center;
-            margin-bottom: 48px;
-        }
+
         .team {
             background-color: var(--color-cloud);
             padding-top: 120px;
@@ -339,40 +346,39 @@
                     display: flex;
                     
                 }
-                .container-footer {
-                padding: 100px 0;
-                display: flex;
-                
-                }
-    .wrap-footer {
-      padding-top: 0px;
-      margin: 0 auto;
-      max-width: 268px;
-      margin-bottom: 0px;
-  }
+.container-footer {
+padding: 100px 0;
+display: flex;
+justify-content: space-between;
+}
+.wrap-footer {
+padding-top: 0px;
+max-width: 268px;
+margin-bottom: 0px;
+}
 .footer-link{
-    justify-content: start;
-    align-items: start;
+justify-content: start;
+align-items: start;
 }
 .footer-title {
-    text-align: start;
+text-align: start;
 }
 .footer-soc {
 max-width: 208px;
 }
 .footer-form {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding-bottom: 0px;
+margin-top: 0px;
+margin-bottom: 0px;
+padding-bottom: 0px;
 }
 .footer-form-title {
-    text-align: start;
+text-align: start;
 }
 .footer-input-wrap {
-    display: flex;
-    gap: 24px;
+display: flex;
+gap: 24px;
 }
 .footer-form-btn{
-    margin-top: 0px;
+margin-top: 0px;
 }
 }
