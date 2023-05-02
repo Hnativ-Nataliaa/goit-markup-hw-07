@@ -94,7 +94,10 @@ flex-direction: column;
 justify-content:space-between ;
 gap: 12px;
         }
-    
+.header-container{
+padding-top: 16px;
+padding-bottom: 16px;
+}
 .contacts-link {
 font-weight: 400;
 font-size: 12px;
@@ -202,7 +205,10 @@ margin-top: 0px;
 .container {
 max-width: 1158px;
 }
-
+.header-container {
+padding-top: 24px;
+padding-bottom: 24px;
+}
 .hero {
     padding-top: 188px;
     padding-bottom: 188px;

@@ -191,8 +191,8 @@ fill: var(--color-grey);
 .mob-menu-soc-list {
 display: flex;
 align-items: center;
-/* gap: 56px; */
-justify-content: space-around;
+gap: 56px;
+/* justify-content: space-around; */
 margin-top: 48px;
 }
 
@@ -223,7 +223,7 @@ font-size: 36px;
 line-height: 1.1;
 letter-spacing: 0.02em;
 text-transform: capitalize;
-color: var(--color-grey);
+color: var(--color-slate);
 }
 .header-list-mob{
 margin-top: 80px;
@@ -241,7 +241,7 @@ font-size: 36px;
 line-height: 1.1;
 letter-spacing: 0.02em;
 text-transform: capitalize;
-color:var(--color-slate);
+color:var(--color-iris));
 }
 .contacts-item-mob:not(:last-child){
 margin-bottom: 40px;
